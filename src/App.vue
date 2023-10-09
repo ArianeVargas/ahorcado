@@ -63,6 +63,10 @@
 
 <script setup>
 import { ref, computed, watch } from 'vue';
+import animales from "./assets/animales.jpeg";
+import colores from "./assets/colores.jpeg";
+import frutas from "./assets/frutas.jpeg";
+import paises from "./assets/paises.jpeg";
 
 const categoriesA = {
   animales: ['gato', 'perro', 'elefante', 'tigre'],
@@ -75,22 +79,22 @@ const categories = [
   {
     label: 'Animales',
     value: 'animales',
-    image: '/src/assets/animales.jpeg', // Reemplaza con la URL de la imagen de animales
+    image: animales, // Reemplaza con la URL de la imagen de animales
   },
   {
     label: 'Frutas',
     value: 'frutas',
-    image: '/src/assets/frutas.jpeg', // Reemplaza con la URL de la imagen de frutas
+    image: frutas, // Reemplaza con la URL de la imagen de frutas
   },
   {
     label: 'Ciudades',
     value: 'ciudades',
-    image: '/src/assets/paises.jpeg', // Reemplaza con la URL de la imagen de ciudades
+    image: paises, // Reemplaza con la URL de la imagen de ciudades
   },
   {
     label: 'Colores',
     value: 'colores',
-    image: '/src/assets/colores.jpeg', // Reemplaza con la URL de la imagen de colores
+    image: colores, // Reemplaza con la URL de la imagen de colores
   },
 ];
 
